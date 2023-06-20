@@ -1,0 +1,19 @@
+.nav {
+    background-color: #00BCD4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    line-height: 2.5;
+    list-style: none;
+}
+
+.menu li {
+    cursor: pointer
+}
