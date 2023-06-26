@@ -51,7 +51,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <Wrapper employeesData={employees} />
+      <Wrapper employeesData={employees} setEmployees={setEmployees} />
     </>
   );
 };
