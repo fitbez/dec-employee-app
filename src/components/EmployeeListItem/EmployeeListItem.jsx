@@ -3,7 +3,7 @@ import React from "react";
 function EmployeeListItem(props) {
   return (
     <>
-      {props.employeesData.map((employee, index) => {
+      {/* {props.employeesData.map((employee, index) => {
         return (
           <div style={StyledEmployeeListItem} key={index}>
             <img style={StyledImage} src={employee.image} alt='person' />
@@ -13,7 +13,8 @@ function EmployeeListItem(props) {
             </div>
           </div>
         );
-      })}
+      })} */}
+      Employee List Item
     </>
   );
 }

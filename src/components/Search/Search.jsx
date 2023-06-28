@@ -1,7 +1,11 @@
 import React from "react";
 
 function Search() {
-  return <div>Search</div>;
+  return (
+    <div>
+      <input type='text' name='search' id='search' />
+    </div>
+  );
 }
 
 export default Search;

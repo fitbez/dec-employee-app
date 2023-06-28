@@ -1,7 +1,7 @@
 import React from "react";
-import Employee from "../Employee/Employee";
 
 function Wrapper(props) {
+  console.log("children", props.children);
   return (
     <div
       style={{
@@ -12,7 +12,7 @@ function Wrapper(props) {
         padding: "3rem 0rem",
       }}
     >
-      <Employee employeesData={props.employeesData} />
+      {props.children}
     </div>
   );
 }

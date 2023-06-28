@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Wrapper from "./components/Wrapper/Wrapper";
+import EmployeeListPage from "./components/EmployeeListPage/EmployeeListPage";
+import HomePage from "./components/HomePage/HomePage";
+import AddEmployeePage from "./components/Page/AddEmployeePage";
+import { Routes, Route } from "react-router-dom";
 
 const employeesData = [
   {
@@ -51,7 +55,36 @@ const App = () => {
   return (
     <>
       <Nav />
-      <Wrapper employeesData={employees} setEmployees={setEmployees} />
+      <Routes>
+        <Route
+          path='/home'
+          element={
+            <Wrapper>
+              <HomePage />
+            </Wrapper>
+          }
+        />
+        {/* localhost:3000 */}
+        <Route
+          path='/add-employee'
+          element={
+            <Wrapper>
+              <AddEmployeePage />
+            </Wrapper>
+          }
+        />
+        {/* localhost:3000/add-employee */}
+        <Route
+          path='/employee-list'
+          element={
+            <Wrapper>
+              <EmployeeListPage />
+            </Wrapper>
+          }
+        />{" "}
+        {/* localhost:3000/employee-list */}
+      </Routes>
+      {/* <Wrapper employeesData={employees} setEmployees={setEmployees} /> */}
     </>
   );
 };
