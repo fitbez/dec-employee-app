@@ -8,7 +8,7 @@ function Wrapper(props) {
         backgroundColor: "#f4f4f4",
         maxWidth: "1200px",
         height: "90vh",
-        margin: "0 auto",
+        margin: "5rem auto",
         padding: "3rem 0rem",
       }}
     >
